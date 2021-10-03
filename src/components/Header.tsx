@@ -10,7 +10,6 @@ type BurgerNavProps = {
 function Header() {
     const [burgerState, setBurgerState] = useState(false);
     const cars = useSelector(selectCars);
-    console.log('test')
     return (
         <Container>
             <a href="/">
