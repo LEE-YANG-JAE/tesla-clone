@@ -21,8 +21,6 @@ function Header() {
                 })}
             </Menu>
             <RightMenu>
-                <a href="/#">Shop</a>
-                <a href="/#">Tesla Account</a>
                 <CustomMenu onClick={() => setBurgerState(true)}></CustomMenu>
             </RightMenu>
             <BurgerNav show={burgerState}>
@@ -30,7 +28,7 @@ function Header() {
                     <CustomClose onClick={() => setBurgerState(false)} />
                 </CloseWrapper>
                 {cars && cars.map((car, index) => {
-                    return <li><a key={index} href="/#">{car}</a></li>
+                    return <li key={index}><a href="/#">{car}</a></li>
                 })}
                 <li><a href="/#">Existing Inventory</a></li>
                 <li><a href="/#">Used Inventory</a></li>
